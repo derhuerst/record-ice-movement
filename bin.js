@@ -31,4 +31,16 @@ const showError = (err) => {
 	process.exit(1)
 }
 
-// todo
+const pump = require('pump')
+const createStream = require('wifi-on-ice-position-stream')
+const {stringify} = require('ndjson')
+
+pump(
+	createStream(),
+	stringify(),
+	process.stdout,
+	(err) => {
+		console.error(err)
+		process.exit(1)
+	}
+)
