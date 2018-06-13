@@ -1,0 +1,32 @@
+{
+	"name": "record-ice-movement",
+	"description": "Record the movement of any ICE using the on-board WiFi.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"bin": {
+		"record-ice-movement": "./bin.js"
+	},
+	"files": [
+		"index.js",
+		"bin.js"
+	],
+	"keywords": [
+		"ice",
+		"wifi on ice",
+		"portal",
+		"movement",
+		"track",
+		"gps",
+		"gpx"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/record-ice-movement",
+	"repository": "derhuerst/record-ice-movement",
+	"bugs": "https://github.com/derhuerst/record-ice-movement/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	}
+}
