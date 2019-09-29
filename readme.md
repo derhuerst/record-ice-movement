@@ -28,6 +28,26 @@ Usage:
     record-ice-movement >file.ndjson
 ```
 
+The JSON format matches [`record-tgv-movement`](https://npmjs.com/package/record-tgv-movement) where possible:
+
+```json
+{
+	"ok": true,
+	"servicelevel": "AVAILABLE_SERVICE",
+	"internet": "HIGH",
+	"gpsOk": true,
+	"speed": 193,
+	"latitude": 52.208488,
+	"longitude": 13.22468,
+	"wagonClass": "SECOND",
+	"navigationChange": "2019-09-14-03-45-10",
+	"series": "415",
+	"tzn": "Tz1505",
+	"serverTime": 1568445967225,
+	"clientTime": 1568445967156
+}
+```
+
 
 ## Contributing
 
