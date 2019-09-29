@@ -31,16 +31,13 @@ const showError = (err) => {
 	process.exit(1)
 }
 
-const pump = require('pump')
 const createStream = require('wifi-on-ice-position-stream')
 const {stringify} = require('ndjson')
 
-pump(
-	createStream(),
-	stringify(),
-	process.stdout,
-	(err) => {
-		console.error(err)
-		process.exit(1)
-	}
-)
+createStream()
+.on('error', (err) => {
+	console.error(err)
+	process.exitCode = 1
+})
+.pipe(stringify())
+.pipe(process.stdout)
