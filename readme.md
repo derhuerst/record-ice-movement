@@ -26,6 +26,12 @@ npx record-ice-movement >file.ndjson
 ```shell
 Usage:
     record-ice-movement >file.ndjson
+Options:
+    --continue-on-train-change  Stop recording as soon as the Triebzugnummer
+                                 reported by the on-board WiFi changes, e.g.
+                                 when your client accidentally connects to
+                                 the WiFi of a different train.
+                                 Default: false
 ```
 
 The JSON format matches [`record-tgv-movement`](https://npmjs.com/package/record-tgv-movement) where possible:

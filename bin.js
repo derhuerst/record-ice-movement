@@ -8,7 +8,8 @@ const pkg = require('./package.json')
 const argv = mri(process.argv.slice(2), {
 	boolean: [
 		'help', 'h',
-		'version', 'v'
+		'version', 'v',
+		'continue-on-train-change'
 	]
 })
 
@@ -16,6 +17,12 @@ if (argv.help || argv.h) {
 	process.stdout.write(`
 Usage:
     record-ice-movement >file.ndjson
+Options:
+    --continue-on-train-change  Stop recording as soon as the Triebzugnummer
+                                 reported by the on-board WiFi changes, e.g.
+                                 when your client accidentally connects to
+                                 the WiFi of a different train.
+                                 Default: false
 \n`)
 	process.exit(0)
 }
@@ -34,7 +41,9 @@ const showError = (err) => {
 const createStream = require('wifi-on-ice-position-stream')
 const {stringify} = require('ndjson')
 
-createStream()
+createStream({
+	endOnTrainChange: !argv['continue-on-train-change']
+})
 .on('error', (err) => {
 	console.error(err)
 	process.exitCode = 1
