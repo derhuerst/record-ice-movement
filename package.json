@@ -23,11 +23,11 @@
 	"bugs": "https://github.com/derhuerst/record-ice-movement/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"mri": "^1.1.1",
 		"ndjson": "^1.5.0",
-		"wifi-on-ice-position-stream": "^0.1.0"
+		"wifi-on-ice-position-stream": "^1.0.0"
 	}
 }
