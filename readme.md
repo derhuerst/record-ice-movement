@@ -55,6 +55,12 @@ The JSON format matches [`record-tgv-movement`](https://npmjs.com/package/record
 ```
 
 
+## Related
+
+- [`wifi-on-ice-position-stream`](https://github.com/derhuerst/wifi-on-ice-position-stream) – A stream of ICE positions, taken from the on-board WiFi.
+- [`wifi-on-ice-portal-client`](https://github.com/derhuerst/wifi-on-ice-portal-client) – Query information from the WifiOnICE portal in German ICE trains.
+
+
 ## Contributing
 
 If you have a question or have difficulties using `record-ice-movement`, please double-check your code and setup first. If you think you have found a bug or want to propose a feature, refer to [the issues page](https://github.com/derhuerst/record-ice-movement/issues).
