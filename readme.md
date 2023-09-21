@@ -61,6 +61,7 @@ The JSON format matches [`record-tgv-movement`](https://npmjs.com/package/record
 - [`wifi-on-ice-position-stream`](https://github.com/derhuerst/wifi-on-ice-position-stream) – A stream of ICE positions, taken from the on-board WiFi.
 - [`wifi-on-ice-portal-client`](https://github.com/derhuerst/wifi-on-ice-portal-client) – Query information from the WifiOnICE portal in German ICE trains.
 - [`record-tgv-movement`](https://github.com/derhuerst/record-tgv-movement) – Record the movement of any [TGV](https://en.wikipedia.org/wiki/TGV) using the on-board WiFi.
+- [`record-cd-train-movement`](https://github.com/derhuerst/record-cd-train-movement) – Record the movement of a [České Dráhy (Czech Railways)](https://en.wikipedia.org/wiki/České_dráhy) train using its on-board WiFi.
 - [`record-flixbus-movement`](htttps://github.com/derhuerst/record-flixbus-movement) – Command-line tool to record the movement of a [Flixbus](https://flixbus.de) coach using the on-board WiFi.
 
 

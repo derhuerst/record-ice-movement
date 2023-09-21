@@ -18,8 +18,8 @@ if (argv.help || argv.h) {
 Usage:
     record-ice-movement >file.ndjson
 Options:
-    --continue-on-train-change  Stop recording as soon as the Triebzugnummer
-                                 reported by the on-board WiFi changes, e.g.
+    --continue-on-train-change  Continue recording even if the Triebzugnummer
+                                 reported by the on-board WiFi has changed, e.g.
                                  when your client accidentally connects to
                                  the WiFi of a different train.
                                  Default: false
