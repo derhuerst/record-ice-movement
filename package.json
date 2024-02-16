@@ -1,7 +1,7 @@
 {
 	"name": "record-ice-movement",
 	"description": "Record the movement of any ICE using the on-board WiFi.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"bin": {
 		"record-ice-movement": "./bin.js"
 	},
@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"mri": "^1.1.1",
-		"ndjson": "^1.5.0",
+		"ndjson": "^2.0.0",
 		"wifi-on-ice-position-stream": "^1.0.0"
 	}
 }
